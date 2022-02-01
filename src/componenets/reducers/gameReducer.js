@@ -139,6 +139,8 @@ export const gameReducer = (state=initialState, action) => {
 				win = 1
 			} else if (state.game.tablero[2] === 0 && state.game.tablero[4] === 0 && state.game.tablero[6] === 0) {
 				win = 0
+			} else if(state.game.tablero[0] !== 3 && state.game.tablero[1] !== 3 && state.game.tablero[2] !== 3 && state.game.tablero[3] !== 3 && state.game.tablero[4] !== 3 && state.game.tablero[5] !== 3 && state.game.tablero[6] !== 3 && state.game.tablero[7] !== 3 && state.game.tablero[8] !== 3) {
+				win = 4
 			}
 			return {
 				...state,

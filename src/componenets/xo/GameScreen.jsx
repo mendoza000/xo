@@ -17,7 +17,7 @@ export const GameScreen = () => {
 	}
 
 	useEffect(() => {
-		if(game.game.type !== 0){
+		if(game.game.type !== 0 && game.game.type !== 1){
 			navigate('/')
 		}
 	}, [])
@@ -48,9 +48,13 @@ export const GameScreen = () => {
 			</button>
 
 			{
-				(game.game.win !== 3) && <Modal win={
-					(game.game.win === tokenPlayer) ? true : false
-				}/>
+				(game.game.win !== 3) 
+				&& <Modal win={
+							(game.game.type === 0) 
+							? (game.game.win === tokenPlayer)
+							: (game.game.win)
+							}
+						/>
 			}
 		</div>
 	)

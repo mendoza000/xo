@@ -10,10 +10,7 @@ export const HomeScreen = ({history}) => {
 
 	const handleSelectGame = (game) => {
 		dispatch( selectGame(game) )
-
-		if(game === 0){
-			navigate('/game') 
-		}
+		navigate('/game') 
 	}
 
 	return(

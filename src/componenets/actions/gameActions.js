@@ -25,9 +25,9 @@ export const restartGame = (tokenPlayer) => ({
 	payload: {token: tokenPlayer}
 })
 
-export const cpuTurn = (tokenPlayer) => ({
+export const cpuTurn = (tokenPlayer, win) => ({
 	type: types.cpuTurn,
-	payload: {token: tokenPlayer}
+	payload: {token: tokenPlayer, win}
 })
 
 export const validateGame = () => ({type: types.validateGame})

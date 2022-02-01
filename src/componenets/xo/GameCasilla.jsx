@@ -11,13 +11,15 @@ export const GameCasilla = ({i}) => {
 		dispatch( selectCasilla(i, game.token) )
 		dispatch( validateGame() )
 		dispatch( nextTurn(game.token) )
-		setTimeout(function() {
-			dispatch( cpuTurn(tokenPlayer) )
-		}, 100);
-		setTimeout(function() {
-			dispatch( validateGame() )
-		}, 150);
-
+		
+		if(game.game.type === 0){
+			setTimeout(function() {
+				dispatch( cpuTurn(tokenPlayer, game.game.win) )
+			}, 100);
+			setTimeout(function() {
+				dispatch( validateGame() )
+			}, 150);
+		}
 	}
 	return(
 		<div 
