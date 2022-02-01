@@ -1,0 +1,19 @@
+
+// Colores principales
+$primary: #04293A;
+$primary-l: lighten($primary, 5);
+$primary-xl: lighten($primary, 25);
+$primary-o: darken($primary, 5);
+
+// Colores secundarios
+$secondary: #F0A500;
+$secondary-l: lighten($secondary, 5);
+$secondary-o: darken($secondary, 10);
+$secondary-xo: darken($secondary, 20);
+
+// Fuentes
+$font-text: 'Rubik', sans-serif;
+
+// Color de funtes
+$color-text: #fffbf2;
+$color-text-o: #a19a8a;

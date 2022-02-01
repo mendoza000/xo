@@ -1,0 +1,95 @@
+.xo__container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.xo__selec{
+	background-color: $primary-l;
+	width: 23rem;
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	border-bottom: 6px solid $primary;
+	box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.8);
+
+	p{
+		margin-top: 1rem;
+		text-align: center;
+		font-size: 1.4rem;
+		color: $color-text-o;
+	}
+}	
+.xo__selec-btn-container{
+	margin-top: 1rem;
+	background-color: $primary-o;
+	width: 100%; 
+	border-radius: 5px;
+	padding: 1rem 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+.xo__selec-btn{
+	border: none;
+	border-radius: 10px;
+	font-family: inherit;
+	font-size: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	background-color: $secondary;
+	color: $primary-o;
+	outline: none;
+	border-bottom: 6px solid $secondary-o;
+
+	transition: background-color .3s, color .3s;
+}
+.xo__selec-btn-not{
+	background-color: transparent;
+	color: $primary-l;
+	border-bottom-color: transparent;
+}
+
+.xo__play{
+	width: 27rem;
+	padding: 1rem 0;
+	border: none;
+	outline: none;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	font-family: inherit;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 5px solid;
+	box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.8);
+	transition: background-color .3s, color .3s, border-color .3s;
+}
+.xo__play-cpu{
+	margin-top: 2rem;
+	background-color: $secondary;
+	color: $primary-o;
+	border-color: $secondary-o;
+
+	&:hover{
+		background-color: $secondary-o;
+		border-color: $secondary-xo
+	}
+}
+.xo__play-pvp{
+	background-color: $primary-l;
+	color: $color-text;
+	border-color: $primary;
+	&:hover{
+		background-color: $primary;
+		border-color: $primary-o
+	}
+}

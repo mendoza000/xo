@@ -1,0 +1,17 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background-color: $primary;
+	font-family: $font-text;
+	color: $color-text;
+}
+
+html{
+	font-size: 10px;
+}
+body{
+	font-size: 1.6rem;
+}

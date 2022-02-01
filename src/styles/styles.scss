@@ -1,0 +1,12 @@
+ 
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+// Configuracion
+@import './base/settings';
+@import './base/base';
+
+// Componentes
+@import './components/xo';
+@import './components/game';
+@import './components/modal'

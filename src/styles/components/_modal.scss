@@ -1,0 +1,50 @@
+.modal__container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal__card{
+	background-color: $primary;
+	margin: 1rem;
+	padding: 2rem 1rem;
+	border-radius: 10px;
+	box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.8);
+	border-bottom: 4px solid $primary-o;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.modal__title{
+	font-size: 2.2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: $secondary;
+}
+.modal__text{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.modal__btn{
+	width: 15rem;
+	padding: 1rem 0;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: $secondary;
+	color: $primary-o;
+	font-size: 1.8rem;
+	border-bottom: 4px solid $secondary-o;
+	box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.6);
+	transition: background-color .3s, color .3s;
+	
+	&:hover{
+		background-color: $secondary-o;
+		border-color: $secondary-xo
+	}
+}
